@@ -34,6 +34,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   width: 100%;
+  padding: 1rem;
   min-height: 100vh;
 }
 
@@ -43,11 +44,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  width: 400px;
+  min-width: 150px;
+  max-width: 400px;
 }
 
 .fb__logo {
-  width: 20rem;
+  min-width: 10rem;
+  max-width: 20rem;
 }
 
 .header__title {
@@ -61,7 +64,8 @@ body {
 
 .form {
   padding: 0.5rem;
-  width: 400px;
+  min-width: 150px;
+  max-width: 400px;
 }
 
 .form__cont {
@@ -125,7 +129,7 @@ body {
 .btn-create {
   width: 50%;
   background-color: var(--green);
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 hr {
@@ -133,7 +137,8 @@ hr {
 }
 
 .form__message {
-  width: 400px;
+  min-width: 150px;
+  max-width: 400px;
   text-wrap: pretty;
   text-align: center;
   padding: 1rem;
