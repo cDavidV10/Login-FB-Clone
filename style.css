@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  text-wrap: balance;
+}
+
+:root {
+  --body: #f0f2f5;
+  --blue: #1877f2;
+  --green: #42b72a;
+  --black: #1c1e21;
+}
+
+.header__title,
+.form__message {
+  color: var(--black);
+}
+
+body {
+  background-color: var(--body);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  width: 400px;
+}
+
+.fb__logo {
+  width: 20rem;
+}
+
+.header__title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.5rem;
+  width: auto;
+  line-height: 1.6rem;
+  width: 100%;
+}
+
+.form {
+  padding: 0.5rem;
+  width: 400px;
+}
+
+.form__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 350px;
+  padding: 0.85rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem #999;
+}
+
+.form__input,
+.btn {
+  height: 3rem;
+  padding: 0.85rem;
+  font-size: 1rem;
+  outline: none;
+  border: 0.5px solid #555;
+  border-radius: 0.25rem;
+  transition: 300ms ease-in-out;
+  width: 100%;
+}
+
+.form__input:focus {
+  border: solid 1.2px var(--blue);
+  box-shadow: 0.1px 0.1px 2px var(--blue);
+}
+
+.form__input::placeholder {
+  color: #90949c;
+}
+
+.form__a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 0.85rem;
+}
+
+.btn {
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.btn:hover,
+.form__a:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.btn-create {
+  width: 50%;
+  background-color: var(--green);
+  font-size: 1rem;
+}
+
+hr {
+  width: 100%;
+}
+
+.form__message {
+  width: 400px;
+  text-wrap: pretty;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (width > 900px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header {
+    align-items: flex-start;
+    height: 360px;
+  }
+
+  .header__title {
+    text-align: start;
+    padding-left: 2rem;
+  }
+}
+
+.form {
+  height: 360px;
+}
+
+@media screen and (width > 1080px) {
+  .header {
+    width: 525px;
+  }
+}
